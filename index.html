@@ -9,12 +9,11 @@
     <script src="./main.js" defer></script> 
     <title>Document</title>
 </head>
-<body>
+<body class="dark">
     <div class="container">
         <div class="card">
             <!-- Toggle theme button -->
             <div class="toggle-theme">
-                <i class="theme-icon fa-regular fa-moon"></i>
                 <i class="theme-icon fa-regular fa-sun"></i>
             </div>
             <!-- portfolio -->
@@ -41,16 +40,16 @@
             </div>
             <!-- Content Options -->
             <div class="options top-margin">
-                <button class="option-btn">Info</button>
-                <button class="option-btn">Skills</button>
-                <button class="option-btn">Projects</button>
+                <button id="infoButton" class="option-btn">Info</button>
+                <button id="projectsButton" class="option-btn selected">Projects</button>
+                <button id="skillsButton" class="option-btn">Skills</button>
             </div>
             <!-- Detail Section -->
             <div class="details">
                 <!-- Projects -->
-                <div class="projects">
+                <div id="projects" class="projects">
                     <div class="projects-grid">
-                        <div class="project-item">
+                        <div id="project-1" class="project-item">
                             <div class="overlay">
                                 <h3 class="project-title">Project</h3>
                                 <h6 class="project-tools">HTML, CSS, JS</h6>
@@ -60,7 +59,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="project-item">
+                        <div id="project-2" class="project-item">
                             <div class="overlay">
                                 <h3 class="project-title">Project</h3>
                                 <h6 class="project-tools">HTML, CSS, JS</h6>
@@ -70,7 +69,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="project-item">
+                        <div id="project-3" class="project-item">
                             <div class="overlay">
                                 <h3 class="project-title">Project</h3>
                                 <h6 class="project-tools">HTML, CSS, JS</h6>
@@ -80,7 +79,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="project-item">
+                        <div id="project-4" class="project-item">
                             <div class="overlay">
                                 <h3 class="project-title">Project</h3>
                                 <h6 class="project-tools">HTML, CSS, JS</h6>
@@ -93,30 +92,30 @@
                     </div>
                 </div>
                 <!-- summary -->
-                <div class="summary">
+                <div id="info" class="summary hide">
                     <div class="flex-container">
                         <div class="flex-item-container">
-                            <div class="flex-title">Education</div>
+                            <div class="flex-title"><i class="margin-right fa-solid fa-graduation-cap"></i>Education</div>
                             <div class="info-item">
-                                <div class="institute-name">University of Calgary, Canada</div>
+                                <div class="institute-name"><i class="fa-regular fa-circle-check"></i><div>University of Calgary, Canada</div></div>
                                 <div class="designation text-light">Master of Computer Science</div>
                                 <div class="period text-light">Sep 2019 - Jan 2023</div>
                             </div>
                             <div class="info-item">
-                                <div class="institute-name">NIT Hamirpur, India</div>
+                                <div class="institute-name"><i class="fa-regular fa-circle-check"></i> NIT Hamirpur, India</div>
                                 <div class="designation text-light">Bachelor of Electronics Engineering</div>
                                 <div class="period text-light">Jul 2014 - May 2018</div>
                             </div>
                         </div>
                         <div class="flex-item-container">
-                            <div class="flex-title">Experience</div>
+                            <div class="flex-title"><i class="margin-right fa-solid fa-laptop"></i>Experience</div>
                             <div class="info-item">
-                                <div class="institute-name">Brightsquid</div>
+                                <div class="institute-name"><i class="fa-regular fa-circle-check"></i> Brightsquid</div>
                                 <div class="designation text-light">Software Developer</div>
                                 <div class="period text-light">Sep 2020 - Jul 2021</div>
                             </div>
                             <div class="info-item">
-                                <div class="institute-name">First American India</div>
+                                <div class="institute-name"><i class="fa-regular fa-circle-check"></i> First American India</div>
                                 <div class="designation text-light">Software Developer</div>
                                 <div class="period text-light">Jul 2018 - Jul 2019</div>
                             </div>
@@ -124,10 +123,10 @@
                     </div>
                 </div>
                 <!-- Skills -->
-                <div class="skills">
+                <div id="skills" class="skills hide">
                     <div class="flex-container">
                         <div class="flex-item-container">
-                            <div class="flex-title">Languages</div>
+                            <div class="flex-title"><i class="margin-right fa-solid fa-code"></i>Languages</div>
                             <div class="skill-grid">
                                 <div class="skill-item">
                                     <div class="skill-tick"><i class="fa-regular fa-circle-check"></i></div>
@@ -181,7 +180,7 @@
                             </div>
                         </div>
                         <div class="flex-item-container">
-                            <div class="flex-title">Technologies</div>
+                            <div class="flex-title"><i class="margin-right fa-solid fa-gears"></i>Technologies</div>
                             <div class="skill-grid">
                                 <div class="skill-item">
                                     <div class="skill-tick"><i class="fa-regular fa-circle-check"></i></div>
