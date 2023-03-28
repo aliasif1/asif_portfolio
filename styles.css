@@ -143,9 +143,8 @@ body.dark {
     display: flex;
     justify-content: center;
     gap: 4px;
-    min-width: 60%;
-    max-width: 90%;
     border-radius: 8px;
+    width: 70%;
 }
 
 .option-btn {
@@ -334,9 +333,13 @@ body.dark {
         flex-direction: column;
     }
 
+    .options {
+        width: 100%;
+    }
+/* 
     .details {
         padding: 0px 10px;
-    }
+    } */
 
 
 }
