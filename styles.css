@@ -155,7 +155,7 @@ body.dark {
     border-radius: 8px;
     font-size: 1rem;
     transition: 0.5s ease;
-    color: red;
+    color: orange;
 }
 
 .option-btn:hover {
