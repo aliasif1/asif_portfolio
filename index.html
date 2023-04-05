@@ -12,9 +12,16 @@
 <body class="dark">
     <div class="container">
         <div class="card">
-            <!-- Toggle theme button -->
-            <div class="toggle-theme">
-                <i class="theme-icon fa-regular fa-sun"></i>
+            <div class="navbar">
+                <!-- Games link -->
+                <div class="games">
+                    <a href="https://aliasif1.github.io/reactWordle/" target="_blank"><i title="Play Wordle" class="icon fa-solid fa-w"></i></a>
+                    <a href="https://aliasif1.github.io/JavaScript_Snake_Game_C/" target="_blank"><i title="Play Snake" class="icon fa-solid fa-worm"></i></a>
+                </div>
+                <!-- Toggle theme button -->
+                <div class="toggle-theme">
+                    <i title="Change Theme" class="icon theme-icon fa-regular fa-sun"></i>
+                </div>
             </div>
             <!-- portfolio -->
             <!-- image, name and social links -->
@@ -27,16 +34,18 @@
                 <h1>Asif Ali Mehmuda</h1>
                 <h3 class="text-light">Software Developer</h3>
                 <div class="social">
-                    <div class="social-icon"><i class="fa-brands fa-github" tabindex="0"></i></div>
-                    <div class="social-icon"><i class="fa-brands fa-linkedin-in" tabindex="0"></i></div>
-                    <div class="social-icon"><i class="fa-regular fa-envelope" tabindex="0"></i></div>
+                    <div class="social-icon"><a href="https://github.com/aliasif1" target="_blank" title="Github Profile"><i class="fa-brands fa-github" tabindex="0"></i></a></div>
+                    <div class="social-icon"><a href="https://www.linkedin.com/in/asif-ali-mehmuda-273793130/" target="_blank" title="Linkedin Profile"><i class="fa-brands fa-linkedin-in" tabindex="0"></i></a></div>
+                    <div class="social-icon"><a href="mailto:asif.mehmuda9@gmail.com" title="Email"><i class="fa-regular fa-envelope" tabindex="0"></i></a></div>
                 </div>
             </div>
             <!-- Resume Download -->
             <div class="download top-margin">
-                <button class="download-btn">
-                    <span>Download Resume <i class="fa-solid fa-download"></i></span>
-                </button>
+                <a href="./assets/Asif Resume.pdf" target="_blank">
+                    <button class="download-btn">
+                        <span>Download Resume <i class="fa-solid fa-download"></i></span>
+                    </button>
+                </a>
             </div>
             <!-- Content Options -->
             <div class="options top-margin">
@@ -51,44 +60,54 @@
                     <div class="projects-grid">
                         <div id="project-1" class="project-item" tabindex="0">
                             <div class="overlay">
-                                <h3 class="project-title">Project</h3>
-                                <h6 class="project-tools">HTML, CSS, JS</h6>
+                                <h3 class="project-title">Shopping App</h3>
+                                <h6 class="project-tools">React | Express | MongoDB | Node | Context API | Authentication | Routing | Responsive</h6>
                                 <div class="project-links">
-                                    <div class="project-link"><i class="fa-solid fa-code"></i></div>
-                                    <div class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+                                    <div class="project-link"><a href="https://github.com/aliasif1/mern_mart_app" target="_blank" title="Visit Repository"><i class="fa-brands fa-github"></i></a></div>
+                                    <div class="project-link"><a href="https://mern-mart-app.onrender.com" target="_blank" title="Visit Live Site"><i class="fa-solid fa-location-arrow"></i></a></div>
                                 </div>
                             </div>
                         </div>
                         <div id="project-2" class="project-item" tabindex="0">
                             <div class="overlay">
-                                <h3 class="project-title">Project</h3>
-                                <h6 class="project-tools">HTML, CSS, JS</h6>
+                                <h3 class="project-title">Task Manager App</h3>
+                                <h6 class="project-tools">React | Express | MongoDB | Node | Context API | Authentication | Routing | Responsive</h6>
                                 <div class="project-links">
-                                    <div class="project-link"><i class="fa-solid fa-code"></i></div>
-                                    <div class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+                                    <div class="project-link"><a href="https://github.com/aliasif1/mern_todo_app" target="_blank" title="Visit Repository"><i class="fa-brands fa-github"></i></a></div>
+                                    <div class="project-link"><a href="https://mern-todo-app-4jen.onrender.com" target="_blank" title="Visit Live Site"><i class="fa-solid fa-location-arrow"></i></a></div>
                                 </div>
                             </div>
                         </div>
                         <div id="project-3" class="project-item" tabindex="0">
                             <div class="overlay">
-                                <h3 class="project-title">Project</h3>
-                                <h6 class="project-tools">HTML, CSS, JS</h6>
+                                <h3 class="project-title">Wordle</h3>
+                                <h6 class="project-tools">React | HTML | CSS</h6>
                                 <div class="project-links">
-                                    <div class="project-link"><i class="fa-solid fa-code"></i></div>
-                                    <div class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+                                    <div class="project-link"><a href="https://github.com/aliasif1/reactWordle" target="_blank" title="Visit Repository"><i class="fa-brands fa-github"></i></a></div>
+                                    <div class="project-link"><a href="https://aliasif1.github.io/reactWordle/" target="_blank" title="Visit Live Site"><i class="fa-solid fa-location-arrow"></i></a></div>
                                 </div>
                             </div>
                         </div>
                         <div id="project-4" class="project-item" tabindex="0">
                             <div class="overlay">
-                                <h3 class="project-title">Project</h3>
-                                <h6 class="project-tools">HTML, CSS, JS</h6>
+                                <h3 class="project-title">API Testing App</h3>
+                                <h6 class="project-tools">Flutter | Dart</h6>
                                 <div class="project-links">
-                                    <div class="project-link"><i class="fa-solid fa-code"></i></div>
-                                    <div class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+                                    <div class="project-link"><a href="https://github.com/aliasif1/flutter-postman-web-app" target="_blank" title="Visit Repository"><i class="fa-brands fa-github"></i></a></div>
+                                    <div class="project-link"><a href="https://aliasif1.github.io/flutter-postman-web-app/" target="_blank" title="Visit Live Site"><i class="fa-solid fa-location-arrow"></i></a></div>
                                 </div>
                             </div>
                         </div>
+                        <!-- <div id="project-5" class="project-item" tabindex="0">
+                            <div class="overlay">
+                                <h3 class="project-title">Project</h3>
+                                <h6 class="project-tools">HTML, CSS, JS</h6>
+                                <div class="project-links">
+                                    <div class="project-link"><a href="https://github.com/aliasif1/mern_mart_app" target="_blank" title="Visit Repository"><i class="fa-brands fa-github"></i></a></div>
+                                    <div class="project-link"><a href="https://github.com/aliasif1/mern_mart_app" target="_blank" title="Visit Live Site"><i class="fa-solid fa-location-arrow"></i></a></div>
+                                </div>
+                            </div>
+                        </div> -->
                     </div>
                 </div>
                 <!-- summary -->
@@ -100,11 +119,13 @@
                                 <div class="institute-name"><i class="fa-regular fa-circle-check"></i><div>University of Calgary, Canada</div></div>
                                 <div class="designation text-light">Master of Computer Science</div>
                                 <div class="period text-light">Sep 2019 - Jan 2023</div>
+                                <div class="tech-stack text-light">DS & Algorithms | Big Data Analysis</div>
                             </div>
                             <div class="info-item">
                                 <div class="institute-name"><i class="fa-regular fa-circle-check"></i> NIT Hamirpur, India</div>
                                 <div class="designation text-light">Bachelor of Electronics Engineering</div>
                                 <div class="period text-light">Jul 2014 - May 2018</div>
+                                <div class="tech-stack text-light">DS & Algorithms | Computer Networks</div>
                             </div>
                         </div>
                         <div class="flex-item-container">
@@ -113,11 +134,13 @@
                                 <div class="institute-name"><i class="fa-regular fa-circle-check"></i> Brightsquid</div>
                                 <div class="designation text-light">Software Developer</div>
                                 <div class="period text-light">Sep 2020 - Jul 2021</div>
+                                <div class="tech-stack text-light">Flutter | Flask | SQL | Rest API</div>
                             </div>
                             <div class="info-item">
                                 <div class="institute-name"><i class="fa-regular fa-circle-check"></i> First American India</div>
                                 <div class="designation text-light">Software Developer</div>
                                 <div class="period text-light">Jul 2018 - Jul 2019</div>
+                                <div class="tech-stack text-light">Angular | .NET | SQL | Rest API</div>
                             </div>
                         </div>
                     </div>

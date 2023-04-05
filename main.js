@@ -1,3 +1,9 @@
+//setting the body opacity to 1 onload
+addEventListener("load", () => {
+    document.body.style.opacity = "1";
+})
+
+
 // Setting light dark theme
 let darkTheme = true;
 const themeElement = document.querySelector(".theme-icon");

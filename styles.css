@@ -7,6 +7,10 @@
     padding: 0px;
 }
 
+a{
+    text-decoration: none;
+    color: inherit;
+}
 
 :root {
     /* Universal */
@@ -26,6 +30,10 @@ body {
     color: var(--text-color);
     font-family: 'Poppins', sans-serif;
     transition: 0.5s ease-in;
+    
+    /* fade in effect */
+    opacity: 0;
+    transition: opacity 1.5s ease-in;
 }
 
 body.dark {
@@ -52,15 +60,18 @@ body.dark {
     max-width: 800px;
 }
 
-.toggle-theme {
-    align-self: flex-end;
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
-.theme-icon {
+.icon {
     font-size: 1.4rem;
+    margin: 0px 8px;
 }
 
-.theme-icon:hover {
+.icon:hover {
     color: var(--primary-button-color);
     cursor: pointer;
 }
@@ -139,7 +150,7 @@ body.dark {
 
 .options {
     padding: 4px;
-    background-color: #cccccc;
+    background-color: #dddddd;
     display: flex;
     justify-content: center;
     gap: 4px;
@@ -193,22 +204,36 @@ body.dark {
 .project-item {
     position: relative;
     border-radius: 8px;
-    background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)) ,url('./assets/project_1.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)) ,url('./assets/project_default.jpg');
     background-position: center center;
-    border: 0.5px solid gray;
+    background-size: cover;
+    border: 1px solid gray;
 }
 
 #project-1 {
-    background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)) ,url('./assets/project_1.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)) ,url('./assets/p1.jpg');
+    background-size: cover;
+    background-position: center center;
 }
 #project-2 {
-    background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)) ,url('./assets/project_2.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)) ,url('./assets/p2.jpg');
+    background-size: cover;
+    background-position: center center;
 }
 #project-3 {
-    background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)) ,url('./assets/project_5.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)) ,url('./assets/p3.jpg');
+    background-size: cover;
+    background-position: center center;
 }
 #project-4 {
-    background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)) ,url('./assets/project_4.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)) ,url('./assets/p4.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+#project-5 {
+    background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)) ,url('./assets/project_default.jpg');
+    background-size: cover;
+    background-position: center center;
 }
 
 .overlay {
@@ -219,13 +244,13 @@ body.dark {
     height: 0%;
     width: 100%;
     opacity: 0.8;
-    /* background: linear-gradient(to bottom, #ADD8E6, #00008B); */
-    background: linear-gradient(to bottom, #1f1f1f, #9f9e9e);
+    background: linear-gradient(to bottom, var(--primary-button-color), #B0E0E6);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 2px;
+    padding: 0px 12px;
     visibility: hidden;  
     overflow: hidden; 
     transition: 1s ease; 
@@ -238,23 +263,26 @@ body.dark {
 
 .project-title {
     color: white;
+    text-align: center;
 }
 
 .project-tools {
     color: white;
+    text-align: center;
 }
 
 .project-links {
     margin-top: 4px;
     display: flex;
-    gap: 4px;
+    gap: 8px;
 }
 
 .project-link{
     cursor: pointer;
     color: white;
-    height: 30px;
-    width: 30px;
+    height: 40px;
+    width: 40px;
+    font-size: 1.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -327,6 +355,7 @@ body.dark {
 
 .skill-level {
     font-size: 0.6rem;
+    display: none;
 }
 
 .info-item{
@@ -361,6 +390,10 @@ body.dark {
 
 .period {
     font-size: 0.9rem;
+}
+
+.tech-stack {
+    font-size: 0.8rem;
 }
 
 /* small phones */
