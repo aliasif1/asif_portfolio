@@ -91,7 +91,7 @@ body.dark {
 .image-container .image-inner-container {
     height: 100%;
     width: 100%;
-    background: linear-gradient(to bottom, #92dbf3, #ffffff);
+    background: linear-gradient(to bottom, #ffffff, #92dbf3);
     border-radius: 50%;
 }
 
