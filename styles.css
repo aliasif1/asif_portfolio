@@ -29,11 +29,8 @@ body {
     background-color: var(--bg-color);
     color: var(--text-color);
     font-family: 'Poppins', sans-serif;
-    transition: 0.5s ease-in;
-    
-    /* fade in effect */
     opacity: 0;
-    transition: opacity 1.5s ease-in;
+    transition: 1s ease-in;
 }
 
 body.dark {
