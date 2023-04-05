@@ -14,7 +14,8 @@ a{
 
 :root {
     /* Universal */
-    --primary-button-color: #1bc2fa;
+    /* --primary-button-color: #1bc2fa; */
+    --primary-button-color: teal;
 
     /* Light Theme */
     --bg-color: #f5f5f5;
